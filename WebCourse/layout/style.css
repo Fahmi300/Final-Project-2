@@ -1,0 +1,701 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+body{
+  background-color: #2eccd442; 
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2eccd4;
+  padding: 10px;
+  width: 100%;
+}
+
+.logo {
+  
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav-items .nav-link {
+  align-items: center;
+  font-weight: bolder;
+  font-size: 29px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.align-items-center {
+  align-items: center!important;
+  display: flex;
+}
+
+.register {
+  color: red;
+  cursor: pointer;
+}
+
+.slotWidget{
+  padding: 20px;
+}
+
+.container-komunikasi{
+  height: 70vh;
+  padding: 0px;
+}
+
+.friend-container{
+  width: 100vw;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.friend-container::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-list{
+  display: flex;
+  min-height: 100%;
+}
+
+.friend-box{
+  position: relative;
+  background-color: white;
+  width: 200px;
+  border-radius: 5%;
+  border: 1px solid black;
+  min-height: 70px;
+  margin: 5px; 
+}
+
+.friend-box a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.friend-box a img{
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.friend-box a h5{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.friend-name-container{
+  width: 100vw;
+  height: 70px;
+  background-color: #2eccd4;
+}
+.friend-name {
+  position: relative;
+  padding: 10px;
+  float: left;
+}
+
+.chat-container{
+  min-width: 100vw;
+  min-height: 55vh;
+}
+
+.chat-list{
+  min-width: 100vw;
+  min-height: 55vh;
+  max-height: 55vh;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+.chat-box{
+  padding: 15px;
+  background-color: white;
+  margin: 20px;
+}
+
+.message-box{
+  background-color: #2eccd4;
+}
+
+.message-form {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+}
+
+.message-text {
+  height: 70px;
+  flex: 1;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
+
+.message-submit {
+  height: 70px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.section {
+  height: 250px;
+  width: 85%;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 50px;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+.section-komunikasi {
+  height: 250px;
+  width: 93%;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 50px;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+
+
+.container-kelasTugas {
+  min-width: 100%;
+  position: relative;
+  margin: 0px;
+  display: flex; 
+  justify-content: space-between;
+}
+
+
+.section h2 {
+  font-family: 'Inter', sans-serif; margin: 0px;
+  font-size: 25px;
+  color: #333;
+}
+
+.section p {
+  font-size: 15px;
+  color: #333;
+}
+
+.carousel {
+  position: relative;
+  margin: 20px 20px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1; /* Ensure controls are above the cards */
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+.carousel-track li {
+  background: #e0e0e0;
+  margin-right: 20px;
+  height: 150px;
+  min-width: 200px; 
+  border-radius: 10px;
+}
+
+.carousel-track div {
+  text-align: center;
+  text-shadow: 2px 2px 5px #ffffff;
+  padding: 10px;
+  margin-right: 20px;
+  height: 130px;
+  min-width: 200px; 
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+@media (max-width: 992px) {
+  .navbar-nav li a{
+      font-size: 20px;
+  }
+  .section p{
+      font-size: 13px;
+  }
+  .section h2{
+      font-size: 20px;
+  }
+  .align-items-center {
+    align-items: center!important;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav.ml-auto {
+      margin-left: 0 !important;
+  }
+  .collapse.navbar-collapse.justify-content-between{
+      margin-left: 50px;
+  }
+}
+
+.announcement-section {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background for the announcement section */
+  margin-top: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-section h2 {
+  color: #333; /* Dark grey color for the heading text */
+  margin-bottom: 10px; /* Adds some space below the heading */
+}
+
+.announcement-section p {
+  color: #666; /* Medium grey color for the paragraph text */
+}
+
+
+.co-login{
+    text-align: center;
+}
+
+/*daftar*/
+
+.co-daftar{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 15% auto;
+    border-radius: 20px;
+    padding: 3% 1%;
+    
+}
+.ca-daftar{
+    display: flex;
+    justify-content: space-around;
+}
+.ca-content{
+    position: relative;
+    background-color: #dfdfdf;
+    width: 200px;
+    border-radius: 5%;
+    border: 1px solid black;
+    height: 200px;
+}
+.ca-content a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+.ca-content a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.ca-content a h5{
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0, 0, 0);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.overlay:hover {
+    background-color: rgba(0,0, 0, 0.6);
+    opacity: 0.3;
+}
+
+
+/*daftar_siswa*/
+input[type=text],input[type=file],input[type=email],input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4d71d5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #556fd5;
+  }
+  
+  .co-daftarsiswa {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 90%;
+    margin: 6% 5% ;
+  }
+
+  /*daftar_guru*/
+.co-daftarguru {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 90%;
+    margin: 6% 5% ;
+  }
+  /*daftar_wali*/
+.co-daftarwali {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 90%;
+    margin: 6% 5% ;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .box-content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Penilaian*/
+  .co-penilaian {
+    background-color: #f2f2f2;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-around;
+    border-radius: 1%;
+  }
+  .box-penilaian {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .box-penilaian input[type=submit] {
+    background-color: #4d71d5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+  }
+  
+  .box-penilaian input[type=submit]:hover {
+    background-color: #556fd5;
+  }
+  
+  .box-penilaian-1{
+    width: 19%;
+  }
+  .box-penilaian-2{
+    width: 29%;
+  }
+  .box-penilaian-3{
+    width: 19%;
+  }
+  .box-penilaian-4{
+    width: 29%;
+  }
+  .box-penilaiann{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .box-penilaian-11{
+    width: 16%;
+    padding-right: 1%;
+  }
+  .box-penilaian-22{
+    width: 16%;
+    padding-right: 1%;
+  }
+  .box-penilaian-33{
+    width: 16%;
+    padding-right: 1%;
+  }
+  .box-penilaian-44{
+    width: 16%;
+    padding-right: 1%;
+  }
+  .box-penilaian-55{
+    width: 16%;
+    padding-right: 1%;
+  }
+  .box-penilaian-66{
+    width: 16%;
+    padding-right: 1%;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 720px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    .ca-daftar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-penilaian {
+        flex-direction: column;
+        width: 100%;
+    }
+    .box-penilaian-1{
+        width: 100%;
+      }
+      .box-penilaian-2{
+        width: 100%;
+      }
+      .box-penilaian-3{
+        width: 100%;
+      }
+      .box-penilaian-4{
+        width: 100%;
+      }
+
+  }
+
+  .co-kelas {
+    background-color: #a68d8d;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* CSS for the checkbox */
+.material input[type="checkbox"] {
+    align-items: end;
+    margin-left: 600px;
+}
+.status-label {
+    right: 0;
+}
+
+/* CSS for the label (optional) */
+.status-label label {
+    font-weight: bold;
+}
+/* CSS for the label (optional) */
+
+/* CSS for the label (optional) */
+.material label {
+    font-weight: bold;
+}
+
+/* Class description styles */
+.class-description {
+    text-align: center;
+    padding: 20px;
+    background-color: #a68d8d;
+}
+.class-description img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.teacher, .assistant {
+    display: inline-block;
+    margin: 20px;
+}
+/* Class content styles */
+.class-content {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.class-content .container {
+    flex: 1;
+    margin: 0 10px 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Material styles */
+.material {
+    display: flex;
+    align-items: center;
+}
+.material button {
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.material button:hover {
+    background-color: #0056b3;
+}
+.material p {
+    margin: 0;
+}
+/* Scrollable containers */
+.material-box, .assignment-box {
+    max-height: 300px;
+    overflow-y: auto;
+}
+/* Carousel styles */
+.cs {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.cs .carousel-item {
+    flex: 0 0 100%;
+}
+/* Button styles */
+#prevBtn, #nextBtn {
+    position: fixed;
+    top: 50%;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
+/* CSS for styling the form and button */
+.upload-form {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    display: none; /* Initially hide the form */
+}
+
+.upload-form input[type="file"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the "Toggle Form" button */
+#toggleFormButton {
+    margin-left: 43%;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#toggleFormButton:hover {
+    background-color: #0056b3;
+}
+
